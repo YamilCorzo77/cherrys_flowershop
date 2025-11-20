@@ -269,54 +269,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     // ==========================================
-    // ANIMACIÓN DEL CARRITO (HOVER)
-    // ==========================================
-    
-    const cartLink = document.querySelector('.cart-link');
-    
-    if (cartLink) {
-        cartLink.addEventListener('mouseenter', function() {
-            this.style.transform = 'scale(1.05)';
-        });
-        
-        cartLink.addEventListener('mouseleave', function() {
-            this.style.transform = 'scale(1)';
-        });
-    }
-    
-    // ==========================================
-    // PRODUCT CARDS - EFECTOS DE HOVER MEJORADOS
-    // ==========================================
-    
-    productCards.forEach(card => {
-        const btn = card.querySelector('.btn-secondary');
-        
-        if (btn) {
-            btn.addEventListener('click', function(e) {
-                e.preventDefault();
-                
-                // Animación de "añadido al carrito"
-                const originalText = this.textContent;
-                this.textContent = 'AÑADIDO ✓';
-                this.style.backgroundColor = '#4caf50';
-                this.style.color = 'white';
-                this.style.borderColor = '#4caf50';
-                
-                setTimeout(() => {
-                    this.textContent = originalText;
-                    this.style.backgroundColor = '';
-                    this.style.color = '';
-                    this.style.borderColor = '';
-                }, 1500);
-                
-                // Mostrar notificación
-                const productName = card.querySelector('.product-name').textContent;
-                showNotification(`${productName} añadido al carrito`, 'success');
-            });
-        }
-    });
-    
-    // ==========================================
     // PARALLAX EFFECT EN HERO
     // ==========================================
     
@@ -375,10 +327,10 @@ document.addEventListener('DOMContentLoaded', function() {
     // ==========================================
     
     function addScrollAnimationToSections() {
-        const sections = document.querySelectorAll('.about, .testimonials, .faq, .contact');
+        const sections = document.querySelectorAll('.testimonials, .faq, .contact');
         
         sections.forEach(section => {
-            const children = section.querySelectorAll('.section-header, .about-content, .about-text, .about-image');
+            const children = section.querySelectorAll('.section-header, .contact-info, .contact-form');
             children.forEach((child, index) => {
                 child.classList.add('scroll-animate');
                 child.style.transitionDelay = `${index * 0.1}s`;
@@ -484,19 +436,6 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         }
         
-        .cart-link {
-            transition: transform 0.3s ease;
-        }
-        
-        .btn-quick-view {
-            cursor: pointer;
-        }
-        
-        .btn-quick-view:active {
-            transform: scale(0.95);
-        }
-        
-        /* Loading spinner para formularios */
         @keyframes spin {
             to {
                 transform: rotate(360deg);
