@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cherry's Flower Shop - Flores frescas y arreglos florales para toda ocasión">
+    <title>Cherry's Flower Shop - Flores Frescas y Arreglos Especiales</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Navigation -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <div class="nav-logo">
+                <svg class="logo-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                    <path d="M12 8v8M8 12h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+                <span class="logo-text">Cherry's Flower Shop</span>
+            </div>
+            
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link active">HOME</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">ABOUT</a></li>
+                <li class="nav-item"><a href="#shop" class="nav-link">SHOP</a></li>
+                <li class="nav-item"><a href="#testimonials" class="nav-link">TESTIMONIALS</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">CONTACT</a></li>
+            </ul>
+            
+            <div class="nav-actions">
+                <a href="#cart" class="cart-link" aria-label="Shopping cart">
+                    CART (0)
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-background">
+            <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=1600&h=900&fit=crop" alt="Beautiful flower arrangement" class="hero-image">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-icon">
+                <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="30" cy="30" r="28" stroke="currentColor" stroke-width="2"/>
+                    <path d="M30 20c-5.5 0-10 4.5-10 10s4.5 10 10 10 10-4.5 10-10-4.5-10-10-10z" fill="currentColor"/>
+                </svg>
+            </div>
+            <h1 class="hero-title">Celebration</h1>
+            <p class="hero-description">Flores frescas para cada momento especial de tu vida. Creamos arreglos únicos que expresan tus sentimientos más profundos.</p>
+            <a href="#shop" class="btn btn-primary">Ver Colección</a>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="shop">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Nuestra Selección</span>
+                <h2 class="section-title">Arreglos Populares</h2>
+            </div>
+            
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1563241527-3004b7be0ffd?w=600&h=600&fit=crop" alt="Peonies Bouquet">
+                        <div class="product-overlay">
+                            <button class="btn-quick-view">Vista Rápida</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Peonies Bouquet</h3>
+                        <p class="product-price">$29.99</p>
+                        <button class="btn btn-secondary">BUY NOW</button>
+                    </div>
+                </article>
+
+                <!-- Product 2 -->
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1520763185298-1b434c919102?w=600&h=600&fit=crop" alt="Dozen of Tulips">
+                        <div class="product-overlay">
+                            <button class="btn-quick-view">Vista Rápida</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Dozen of Tulips</h3>
+                        <p class="product-price">$39.99</p>
+                        <button class="btn btn-secondary">BUY NOW</button>
+                    </div>
+                </article>
+
+                <!-- Product 3 -->
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1582794543139-8ac9cb0f7b11?w=600&h=600&fit=crop" alt="Yellow Tulips Bouquet">
+                        <div class="product-overlay">
+                            <button class="btn-quick-view">Vista Rápida</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Yellow Tulips Bouquet</h3>
+                        <p class="product-price">$49.99</p>
+                        <button class="btn btn-secondary">BUY NOW</button>
+                    </div>
+                </article>
+
+                <!-- Product 4 -->
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1455659817273-f96807779a8a?w=600&h=600&fit=crop" alt="Rose Garden">
+                        <div class="product-overlay">
+                            <button class="btn-quick-view">Vista Rápida</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Rose Garden</h3>
+                        <p class="product-price">$59.99</p>
+                        <button class="btn btn-secondary">BUY NOW</button>
+                    </div>
+                </article>
+
+                <!-- Product 5 -->
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1487070183336-b863922373d4?w=600&h=600&fit=crop" alt="Sunflower Delight">
+                        <div class="product-overlay">
+                            <button class="btn-quick-view">Vista Rápida</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Sunflower Delight</h3>
+                        <p class="product-price">$35.99</p>
+                        <button class="btn btn-secondary">BUY NOW</button>
+                    </div>
+                </article>
+
+                <!-- Product 6 -->
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1561181286-d3fee7d55364?w=600&h=600&fit=crop" alt="Orchid Elegance">
+                        <div class="product-overlay">
+                            <button class="btn-quick-view">Vista Rápida</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Orchid Elegance</h3>
+                        <p class="product-price">$69.99</p>
+                        <button class="btn btn-secondary">BUY NOW</button>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1560493676-04071c5f467b?w=800&h=1000&fit=crop" alt="Sobre Cherry's Flower Shop">
+                </div>
+                <div class="about-text">
+                    <span class="section-subtitle">Nuestra Historia</span>
+                    <h2 class="section-title">Flores con Amor desde 1995</h2>
+                    <p>En Cherry's Flower Shop, creemos que cada flor cuenta una historia única. Durante más de 25 años, hemos sido el lugar de confianza para celebraciones, expresiones de amor y momentos inolvidables.</p>
+                    <p>Nuestro equipo de floristas expertos selecciona cuidadosamente cada flor, asegurando frescura y calidad excepcional en cada arreglo. Trabajamos con cultivadores locales y proveedores internacionales para ofrecer las flores más hermosas durante todo el año.</p>
+                    <ul class="about-features">
+                        <li>✓ Flores frescas diariamente</li>
+                        <li>✓ Diseños personalizados</li>
+                        <li>✓ Entrega el mismo día</li>
+                        <li>✓ Satisfacción garantizada</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Lo Que Dicen Nuestros Clientes</span>
+                <h2 class="section-title">Testimonios</h2>
+            </div>
+            
+            <div class="testimonials-grid">
+                <article class="testimonial-card">
+                    <div class="testimonial-rating">
+                        ★★★★★
+                    </div>
+                    <p class="testimonial-text">"Las flores más hermosas que he recibido. El arreglo de rosas fue perfecto para mi aniversario. ¡Altamente recomendado!"</p>
+                    <div class="testimonial-author">
+                        <img src="https://i.pravatar.cc/100?img=1" alt="María González">
+                        <div>
+                            <h4>María González</h4>
+                            <p>Cliente desde 2020</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="testimonial-card">
+                    <div class="testimonial-rating">
+                        ★★★★★
+                    </div>
+                    <p class="testimonial-text">"Servicio excepcional. Entregaron exactamente a tiempo y el bouquet superó todas mis expectativas. Sin duda volveré."</p>
+                    <div class="testimonial-author">
+                        <img src="https://i.pravatar.cc/100?img=5" alt="Carlos Ramírez">
+                        <div>
+                            <h4>Carlos Ramírez</h4>
+                            <p>Cliente desde 2019</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="testimonial-card">
+                    <div class="testimonial-rating">
+                        ★★★★★
+                    </div>
+                    <p class="testimonial-text">"Cherry's siempre hace que cada ocasión sea especial. Sus arreglos personalizados son obras de arte. ¡Gracias por todo!"</p>
+                    <div class="testimonial-author">
+                        <img src="https://i.pravatar.cc/100?img=9" alt="Ana López">
+                        <div>
+                            <h4>Ana López</h4>
+                            <p>Cliente desde 2018</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">¿Tienes Preguntas?</span>
+                <h2 class="section-title">Preguntas Frecuentes</h2>
+            </div>
+            
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>¿Ofrecen entrega el mismo día?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Sí, ofrecemos entrega el mismo día para pedidos realizados antes de las 2:00 PM. Asegúrate de verificar la disponibilidad en tu área al momento de hacer el pedido.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>¿Puedo personalizar mi arreglo floral?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>¡Absolutamente! Nuestro equipo de floristas expertos puede crear arreglos personalizados según tus preferencias. Contáctanos directamente para discutir tus ideas.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>¿Cuánto tiempo duran las flores?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Con el cuidado adecuado, nuestras flores frescas pueden durar entre 7-14 días. Incluimos instrucciones de cuidado con cada pedido para maximizar la vida de tus flores.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>¿Qué métodos de pago aceptan?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Aceptamos todas las principales tarjetas de crédito y débito, PayPal, y transferencias bancarias. Todos los pagos son procesados de forma segura.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>¿Tienen política de devolución?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Garantizamos 100% tu satisfacción. Si no estás completamente satisfecho con tu pedido, contáctanos dentro de las 24 horas y lo resolveremos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <div class="newsletter-text">
+                    <h2>Suscríbete a Nuestro Newsletter</h2>
+                    <p>Recibe ofertas exclusivas, consejos de cuidado floral y novedades directamente en tu correo.</p>
+                </div>
+                <form class="newsletter-form" id="newsletter-form">
+                    <input type="email" placeholder="Tu correo electrónico" required aria-label="Email address">
+                    <button type="submit" class="btn btn-primary">Suscribirse</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <span class="section-subtitle">Contáctanos</span>
+                    <h2 class="section-title">Estamos Aquí Para Ti</h2>
+                    <p>¿Tienes alguna pregunta o necesitas ayuda con tu pedido? Nuestro equipo está listo para asistirte.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-detail">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                            <div>
+                                <h4>Ubicación</h4>
+                                <p>Goddard Hall 80<br>Washington Square E, New York, NY 10003</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-detail">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                            </svg>
+                            <div>
+                                <h4>Teléfono</h4>
+                                <p>+1 (256) 710 - 2253</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-detail">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                            <div>
+                                <h4>Email</h4>
+                                <p>info@cherrysflowers.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Nombre Completo</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Correo Electrónico</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Asunto</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Mensaje</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <svg class="logo-icon" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="16" cy="16" r="14" stroke="currentColor" stroke-width="2"/>
+                            <path d="M16 10v12M10 16h12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        <span>Cherry's Flower Shop</span>
+                    </div>
+                    <p class="footer-description">Creando momentos inolvidables con las flores más hermosas desde 1995.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a>
+                        <a href="#" aria-label="Twitter"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a>
+                        <a href="#" aria-label="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" fill="none" stroke="#fff" stroke-width="2"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="#fff" stroke-width="2"></line></svg></a>
+                        <a href="#" aria-label="Pinterest"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.26 2.67 7.9 6.43 9.34-.09-.79-.17-2.01.04-2.87.19-.78 1.23-5.2 1.23-5.2s-.31-.63-.31-1.56c0-1.46.85-2.55 1.9-2.55.9 0 1.33.67 1.33 1.48 0 .9-.57 2.25-.87 3.5-.25 1.04.52 1.89 1.55 1.89 1.86 0 3.29-1.96 3.29-4.79 0-2.5-1.8-4.25-4.37-4.25-2.98 0-4.73 2.23-4.73 4.54 0 .9.34 1.86.77 2.38.08.1.09.19.07.29l-.29 1.18c-.04.18-.15.22-.34.13-1.31-.61-2.13-2.52-2.13-4.06 0-3.3 2.4-6.33 6.92-6.33 3.63 0 6.46 2.59 6.46 6.05 0 3.61-2.27 6.51-5.43 6.51-1.06 0-2.06-.55-2.4-1.2 0 0-.53 2.01-.65 2.5-.24.92-.89 2.07-1.32 2.77 1 .31 2.06.48 3.16.48 5.52 0 10-4.48 10-10S17.52 2 12 2z"></path></svg></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul>
+                        <li><a href="#home">Inicio</a></li>
+                        <li><a href="#about">Sobre Nosotros</a></li>
+                        <li><a href="#shop">Tienda</a></li>
+                        <li><a href="#contact">Contacto</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Categorías</h3>
+                    <ul>
+                        <li><a href="#">Rosas</a></li>
+                        <li><a href="#">Tulipanes</a></li>
+                        <li><a href="#">Peonías</a></li>
+                        <li><a href="#">Orquídeas</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Información</h3>
+                    <ul>
+                        <li><a href="#">Política de Privacidad</a></li>
+                        <li><a href="#">Términos y Condiciones</a></li>
+                        <li><a href="#">Envíos y Devoluciones</a></li>
+                        <li><a href="#">Preguntas Frecuentes</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Cherry's Flower Shop. Todos los derechos reservados. Diseñado con amor 🌸</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scroll-top" aria-label="Scroll to top">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
