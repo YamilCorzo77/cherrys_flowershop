@@ -333,6 +333,74 @@ ul {
     height: 100%;
     object-fit: cover;
     animation: zoomIn 20s ease infinite alternate;
+    /* Matte, desaturated film look */
+    filter: 
+        saturate(0.6)           /* Desaturación para look mate */
+        contrast(0.85)          /* Bajo contraste */
+        brightness(1.05)        /* Highlights suaves */
+        sepia(0.15)             /* Tinte cálido/oliva sutil */
+        hue-rotate(-5deg);      /* Ajuste de tono hacia verde/oliva */
+}
+
+/* Overlay verde claro con grain effect */
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: 
+        linear-gradient(
+            135deg, 
+            rgba(160, 170, 150, 0.25) 0%,    /* Verde oliva claro */
+            rgba(140, 150, 135, 0.20) 50%,   /* Verde mate medio */
+            rgba(100, 110, 95, 0.15) 100%    /* Verde oscuro sutil */
+        );
+    mix-blend-mode: overlay;
+}
+
+/* Agregar film grain effect */
+.hero-overlay::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        repeating-linear-gradient(
+            0deg,
+            transparent,
+            transparent 2px,
+            rgba(0, 0, 0, 0.03) 2px,
+            rgba(0, 0, 0, 0.03) 4px
+        ),
+        repeating-linear-gradient(
+            90deg,
+            transparent,
+            transparent 2px,
+            rgba(0, 0, 0, 0.03) 2px,
+            rgba(0, 0, 0, 0.03) 4px
+        );
+    opacity: 0.4;
+    pointer-events: none;
+}
+
+/* Soft vignette para sombras suaves */
+.hero-overlay::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(
+        ellipse at center,
+        transparent 0%,
+        transparent 50%,
+        rgba(0, 0, 0, 0.15) 100%
+    );
+    pointer-events: none;
 }
 
 @keyframes zoomIn {
@@ -342,15 +410,6 @@ ul {
     to {
         transform: scale(1.1);
     }
-}
-
-.hero-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(135deg, rgba(245, 181, 181, 0.3) 0%, rgba(44, 44, 44, 0.3) 100%);
 }
 
 .hero-content {
